@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "FS Utils",
+  "description": "Utilitários para FamilySearch",
+  "version": "1.0",
+  "permissions": [
+    "storage", "unlimitedStorage"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "images/icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://www.familysearch.org/ark:/61903/*"
+      ]
+    }
+  ]
+}
