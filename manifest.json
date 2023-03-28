@@ -4,7 +4,7 @@
   "description": "Utilitários para FamilySearch",
   "version": "1.0",
   "permissions": [
-    "storage", "unlimitedStorage"
+    "storage", "unlimitedStorage", "downloads"
   ],
   "action": {
     "default_popup": "popup/popup.html",
